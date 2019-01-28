@@ -14,7 +14,7 @@ header {
   background-color: #2f3e51;
   float: left;
 
-  .left-container--top {
+  &--top {
     overflow: hidden;
     background-color: #253141;
     height: 114px;
@@ -62,7 +62,7 @@ header {
   float: right;
   margin-top: 25px;
 
-  .main-container--group {
+  &--group {
     border-bottom: solid 1px #eeeeee;
     position: relative;
 
