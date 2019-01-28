@@ -1,6 +1,6 @@
 header {
   position: fixed;
-  background-color: #38AEF0;
+  background-color: $mainBlueColor;
   color: #FFFFFF;
   text-align: center;
   height: 25px;
@@ -14,7 +14,7 @@ header {
   background-color: #2f3e51;
   float: left;
 
-  .left-container--top {
+  .＆--top {
     overflow: hidden;
     background-color: #253141;
     height: 114px;
@@ -23,7 +23,7 @@ header {
       padding: 44px 20px 35px 20px;
       font-size: 16px;
       font-weight: bold;
-      color: #FFFFFF;
+      color: $mainWhiteColor;
       width: 200px;
       float: left;
     }
@@ -31,6 +31,7 @@ header {
     .left-container--top--icon {
       float: left;
       margin-top: 44px;
+      color: white;
     }
 
     i {
@@ -44,7 +45,7 @@ header {
   li.left-container--other {
     list-style: none;
     padding: 20px;
-    color: #FFFFFF;
+    color: $mainWhiteColor;
 
     h4 {
       font-size: 15px;
@@ -62,7 +63,7 @@ header {
   float: right;
   margin-top: 25px;
 
-  .main-container--group {
+  &--group {
     border-bottom: solid 1px #eeeeee;
     position: relative;
 
@@ -85,7 +86,7 @@ header {
     }
 
     h4 {
-      color: #38AEF0;
+      color: $mainBlueColor;
       height: 40px;
       line-height: 40px;
       padding-right: 20px;
@@ -95,7 +96,7 @@ header {
       font-size: 14px;
       position: absolute;
       display: inline-block;
-      border: solid 2px #38AEF0;
+      border: solid 2px $mainBlueColor;
     }
   }
 
@@ -155,8 +156,8 @@ header {
       margin-right: 40px;
       width: 100px;
       font-size: 16px;
-      background-color: #38AEF0;
-      color: #FFFFFF;
+      background-color: $mainBlueColor;
+      color: $mainWhiteColor;
     }
   }
 }
