@@ -1,6 +1,6 @@
 header {
   position: fixed;
-  background-color: $mainBlueColor;
+  background-color: #38AEF0;
   color: #FFFFFF;
   text-align: center;
   height: 25px;
@@ -14,7 +14,7 @@ header {
   background-color: #2f3e51;
   float: left;
 
-  &--top {
+  .left-container--top {
     overflow: hidden;
     background-color: #253141;
     height: 114px;
@@ -23,7 +23,7 @@ header {
       padding: 44px 20px 35px 20px;
       font-size: 16px;
       font-weight: bold;
-      color: $mainWhiteColor;
+      color: #FFFFFF;
       width: 200px;
       float: left;
     }
@@ -31,7 +31,6 @@ header {
     .left-container--top--icon {
       float: left;
       margin-top: 44px;
-      color: white;
     }
 
     i {
@@ -44,8 +43,8 @@ header {
 
   li.left-container--other {
     list-style: none;
-    padding: 20px 20px 20px 20px;
-    color: $mainWhiteColor;
+    padding: 20px;
+    color: #FFFFFF;
 
     h4 {
       font-size: 15px;
@@ -63,7 +62,7 @@ header {
   float: right;
   margin-top: 25px;
 
-  &--group {
+  .main-container--group {
     border-bottom: solid 1px #eeeeee;
     position: relative;
 
@@ -86,7 +85,7 @@ header {
     }
 
     h4 {
-      color: $mainBlueColor;
+      color: #38AEF0;
       height: 40px;
       line-height: 40px;
       padding-right: 20px;
@@ -96,7 +95,7 @@ header {
       font-size: 14px;
       position: absolute;
       display: inline-block;
-      border: solid 2px $mainBlueColor;
+      border: solid 2px #38AEF0;
     }
   }
 
@@ -142,12 +141,9 @@ header {
     bottom: 0;
 
     .message-form {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      margin-left: 40px;
+      margin: 20px -40px 20px 40px;
       height: 50px;
       padding-left: 10px;
-      margin-right: -40px;
     }
 
     i {
@@ -159,8 +155,8 @@ header {
       margin-right: 40px;
       width: 100px;
       font-size: 16px;
-      background-color: $mainBlueColor;
-      color: $mainWhiteColor;
+      background-color: #38AEF0;
+      color: #FFFFFF;
     }
   }
 }
