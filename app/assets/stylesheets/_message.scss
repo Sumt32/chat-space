@@ -1,0 +1,47 @@
+.left-container {
+  width: 300px;
+  height: 100vh;
+  background-color: #2f3e51;
+
+  .left-container--top {
+    overflow: hidden;
+    background-color: #253141;
+
+
+    h3 {
+      padding: 35px 20px 35px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #FFFFFF;
+      width: 200px;
+      float: left;
+    }
+
+    .left-container--top--icon {
+      float: left;
+      margin-top: 35px;
+    }
+
+    a.i {
+      display: inline;
+      color: white;
+      padding-right: 3px;
+      text-decoration: none;
+    }
+  }
+
+  li.left-container--other {
+    list-style: none;
+    padding: 20px 20px 5px 20px;
+    color: #FFFFFF;
+
+    h4 {
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 11px;
+    }
+  }
+}
