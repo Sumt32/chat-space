@@ -1,6 +1,6 @@
 header {
   position: fixed;
-  background-color: #38AEF0;
+  background-color: $mainBlueColor;
   color: #FFFFFF;
   text-align: center;
   height: 25px;
@@ -23,7 +23,7 @@ header {
       padding: 44px 20px 35px 20px;
       font-size: 16px;
       font-weight: bold;
-      color: #FFFFFF;
+      color: $mainWhiteColor;
       width: 200px;
       float: left;
     }
@@ -31,9 +31,10 @@ header {
     .left-container--top--icon {
       float: left;
       margin-top: 44px;
+      color: white;
     }
 
-    a.i {
+    i {
       display: inline;
       color: white;
       padding-right: 3px;
@@ -44,7 +45,7 @@ header {
   li.left-container--other {
     list-style: none;
     padding: 20px 20px 20px 20px;
-    color: #FFFFFF;
+    color: $mainWhiteColor;
 
     h4 {
       font-size: 15px;
@@ -85,7 +86,7 @@ header {
     }
 
     h4 {
-      color: #38AEF0;
+      color: $mainBlueColor;
       height: 40px;
       line-height: 40px;
       padding-right: 20px;
@@ -95,7 +96,7 @@ header {
       font-size: 14px;
       position: absolute;
       display: inline-block;
-      border: solid 2px #38AEF0;
+      border: solid 2px $mainBlueColor;
     }
   }
 
@@ -158,8 +159,8 @@ header {
       margin-right: 40px;
       width: 100px;
       font-size: 16px;
-      background-color: #38AEF0;
-      color: #FFFFFF;
+      background-color: $mainBlueColor;
+      color: $mainWhiteColor;
     }
   }
 }

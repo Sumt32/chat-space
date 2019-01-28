@@ -2,8 +2,10 @@
   .left-container--top
     %h3 Chatmember
     .left-container--top--icon
-      %a.i.far.fa-edit{:href => "#"}
-      %a.i.fas.fa-cog{:href => "#"}
+      = link_to "#", method: :get do
+        %i.far.fa-edit
+      = link_to "#", method: :get do
+        %i.fas.fa-cog
   %ul
     %li.left-container--other
       %h3 Other
