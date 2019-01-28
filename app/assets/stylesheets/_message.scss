@@ -1,15 +1,26 @@
+header {
+  position: fixed;
+  background-color: #38AEF0;
+  color: #FFFFFF;
+  text-align: center;
+  height: 25px;
+  width: 100%;
+}
+
 .left-container {
+  margin-top: 25px;
   width: 300px;
   height: 100vh;
   background-color: #2f3e51;
+  float: left;
 
   .left-container--top {
     overflow: hidden;
     background-color: #253141;
-
+    height: 114px;
 
     h3 {
-      padding: 35px 20px 35px 20px;
+      padding: 44px 20px 35px 20px;
       font-size: 16px;
       font-weight: bold;
       color: #FFFFFF;
@@ -19,7 +30,7 @@
 
     .left-container--top--icon {
       float: left;
-      margin-top: 35px;
+      margin-top: 44px;
     }
 
     a.i {
@@ -32,7 +43,7 @@
 
   li.left-container--other {
     list-style: none;
-    padding: 20px 20px 5px 20px;
+    padding: 20px 20px 20px 20px;
     color: #FFFFFF;
 
     h4 {
@@ -42,6 +53,113 @@
 
     p {
       font-size: 11px;
+    }
+  }
+}
+
+.main-container {
+  width: calc(100vw - 300px);
+  float: right;
+  margin-top: 25px;
+
+  .main-container--group {
+    border-bottom: solid 1px #eeeeee;
+    position: relative;
+
+    h3,
+    p {
+      padding-left: 40px;
+    }
+
+    h3 {
+      padding-top: 35px;
+      padding-bottom: 15px;
+      font-size: 20px;
+      color: #333333;
+    }
+
+    p {
+      font-size: 12px;
+      color: #999999;
+      padding-bottom: 15px;
+    }
+
+    h4 {
+      color: #38AEF0;
+      height: 40px;
+      line-height: 40px;
+      padding-right: 20px;
+      padding-left: 20px;
+      right: 40px;
+      top: 28px;
+      font-size: 14px;
+      position: absolute;
+      display: inline-block;
+      border: solid 2px #38AEF0;
+    }
+  }
+
+  ul {
+    margin-top: 46px;
+    padding-left: 40px;
+
+    li {
+      margin-bottom: 40px;
+
+      .main-container--message--sender {
+
+        h3 {
+          margin-bottom: 10px;
+          font-size: 16px;
+          font-weight: bold;
+          color: #434A54;
+          float: left;
+          padding-right: 10px;
+        }
+
+        h4 {
+          font-size: 12px;
+          color: #999999;
+          float: left;
+          padding-top: 3px;
+        }
+      }
+
+      p {
+        font-size: 14px;
+        color: #434A54;
+        clear: both;
+      }
+    }
+  }
+
+  footer {
+    position: fixed;
+    background-color: #DDDDDD;
+    width: 100%;
+    height: 90px;
+    bottom: 0;
+
+    .message-form {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 40px;
+      height: 50px;
+      padding-left: 10px;
+      margin-right: -40px;
+    }
+
+    i {
+      margin-right: 25px;
+    }
+
+    button {
+      height: 50px;
+      margin-right: 40px;
+      width: 100px;
+      font-size: 16px;
+      background-color: #38AEF0;
+      color: #FFFFFF;
     }
   }
 }
