@@ -3,14 +3,16 @@
     %h3
       = current_user.name
     .left-container--top--icon
-      = link_to "#", method: :get do
+      = link_to new_group_path, method: :get do
         %i.far.fa-edit
       = link_to edit_user_path(current_user), method: :get do
         %i.fas.fa-cog
   %ul
     %li.left-container--other
-      %h3 Other
-      %p ok
-    %li.left-container--other
-      %h3 Other2
-      %p まだメッセージがありません。
+      - current_user.groups.each do |group|
+        = link_to group_messages_path(group) do
+          .group__name
+            = group.name
+          .group__message
+            メッセージはまだありません。
+
