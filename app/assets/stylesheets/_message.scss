@@ -46,13 +46,15 @@ header {
     padding: 20px;
     color: $mainWhiteColor;
 
-    h4 {
+    .group__name {
       font-size: 15px;
       margin-bottom: 5px;
+      color: $mainWhiteColor;
     }
 
-    p {
+    .group__message {
       font-size: 11px;
+      color: $mainWhiteColor;
     }
   }
 }
