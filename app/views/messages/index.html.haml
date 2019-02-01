@@ -1,12 +1,11 @@
 = render partial:'side'
-.messages
-= render partial: 'message', collection: @messages
+%section.main-container
+  %section.main-container--group
+    %h3= @group.name
+    %p members:
+    - @group.users.each do |member|
+      %p= member.name
+    %h4 Edit
+  = render partial: 'message', collection: @messages
+  = render partial: 'footer'
 
-%footer
-= form_for [@group, @message] do |f|
-    = f.text_field :body, class: 'message-form', placeholder: 'type a message'
-    .form__mask
-    = f.label :image, class: 'form__mask__image' do
-        = fa_icon 'picture-o', class: 'icon'
-        = f.file_field :image, class: 'hidden'
-    = f.submit 'Send', class: 'send-button'
