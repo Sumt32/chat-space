@@ -25,6 +25,9 @@
             $('.form__message').val('');
             $('.form__submit').prop('disabled', false);
           })
+          .fail(function(data) {
+            alert('error!');
+          });
         return false;
       })
     })
