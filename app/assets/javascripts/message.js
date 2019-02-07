@@ -22,7 +22,7 @@
           .done(function(messageData) {
             var html = messageHTML(messageData);
             $('.main-container').append(html);
-            document.getElementById('new_message').reset();
+            $('#new_message')[0].reset();
             $('.form__submit').prop('disabled', false);
             $("html,body").animate({ scrollTop: $('.main-container--message__content').offset().top });
           })
