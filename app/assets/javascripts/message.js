@@ -1,5 +1,5 @@
     $(function() {
-      function buildHTML(message) {
+      function messageHTML(message) {
         var html = `<div class="main-container--name">${message.name}</div>
                     <div class="main-container--date">${message.time}</div>
                     <div class="main-container--message">
@@ -19,14 +19,14 @@
             processData: false,
             contentType: false
           })
-          .done(function(data) {
-            var html = buildHTML(data);
+          .done(function(messageData) {
+            var html = messageHTML(messageData);
             $('.main-container').append(html);
             document.getElementById('new_message').reset();
             $('.form__submit').prop('disabled', false);
             $("html,body").animate({ scrollTop: $('.main-container--message__content').offset().top });
           })
-          .fail(function(data) {
+          .fail(function(messageData) {
             alert('error!');
           });
       });
