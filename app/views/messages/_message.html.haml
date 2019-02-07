@@ -1,7 +1,7 @@
 .main-container--name
   = message.user.name
 .main-container--date
-  = message.created_at.strftime("%Y/%m/%d %H:%M")
+  = message.created_at.strftime("%Y/%m/%d")
 .main-container--message
   - if message.body.present?
     %p.main-container--message__content
