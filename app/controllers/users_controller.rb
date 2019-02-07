@@ -1,5 +1,11 @@
 class UsersController < ApplicationController
   def index
+    @products = .where('name LIKE(?)', "%#{params[:keyword]}%").limit(20)
+    respond_to do |format|
+      format.html
+      format.json
+    end
+  end
   end
 
   def edit
