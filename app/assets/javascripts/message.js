@@ -24,10 +24,11 @@
             $('.main-container').append(html);
             $('.form__message').val('');
             $('.form__submit').prop('disabled', false);
+            $("html,body").animate({ scrollTop: $('.main-container--message__content').offset().top });
           })
           .fail(function(data) {
             alert('error!');
           });
-        return false;
-      })
-    })
+      });
+      return false;
+    });
