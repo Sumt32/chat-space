@@ -1,11 +1,12 @@
 class UsersController < ApplicationController
   def index
-    @products = .where('name LIKE(?)', "%#{params[:keyword]}%").limit(20)
+    @users = User.where('name LIKE(?)', "%#{params[:keyword]}%").limit(20)
+    @group = Group.new
+    @group.users << current_user
     respond_to do |format|
       format.html
       format.json
     end
-  end
   end
 
   def edit
