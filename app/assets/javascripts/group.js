@@ -29,8 +29,6 @@ $(function() {
           users.forEach(function(users) {
             appendUser(users);
           });
-        } else {
-          return false;
         }
       })
       .fail(function() {
