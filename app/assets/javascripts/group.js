@@ -50,3 +50,4 @@ $(function() {
     $(this).parent().remove();
   });
 })
+
