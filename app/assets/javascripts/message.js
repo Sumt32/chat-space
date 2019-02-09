@@ -30,6 +30,4 @@
             alert('error!');
           });
       });
-      return false;
     });
-
