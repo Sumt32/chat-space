@@ -1,9 +1,10 @@
-.main-container--name
-  = message.user.name
-.main-container--date
-  = message.created_at.in_time_zone('Tokyo').strftime("%Y/%m/%d %H:%M")
-.main-container--message
-  - if message.body.present?
-    %p.main-container--message__content
-      = message.body
-  = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
+.main-container--wrapper{"data-id" => "#{message.id}"}
+  .main-container--name
+    = message.user.name
+  .main-container--date
+    = message.created_at.in_time_zone('Tokyo').strftime("%Y/%m/%d %H:%M")
+  .main-container--message
+    - if message.body.present?
+      %p.main-container--message__content
+        = message.body
+    = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
