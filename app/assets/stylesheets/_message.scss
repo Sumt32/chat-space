@@ -133,14 +133,19 @@ header {
     bottom: 0;
 
     &__message {
-      width: 40%;
-      margin: 20px 40px 0 30px;
+      width: 65%;
+      margin: 20px 10px 0 30px;
+      padding-left: 10px;
       float: left;
+      position: relative;
     }
 
     .form__mask {
       width: 25%;
-      float: left;
+      height: 40px;
+      position: absolute;
+      right: 150px;
+      top: 32px;
     }
 
     .form__submit {
@@ -154,8 +159,10 @@ header {
       padding-left: 10px;
     }
 
-    i {
-      margin-right: 25px;
+
+
+    .hidden {
+      display: none;
     }
 
     button {
@@ -167,4 +174,19 @@ header {
       color: $mainWhiteColor;
     }
   }
+}
+
+#message_body {
+  height: 45px;
+}
+
+.form__submit {
+  color: #FFFFFF;
+  background-color: #38AEF0;
+  width: 7%;
+  height: 50px;
+  padding: 0 10px;
+  margin-top: 20px;
+  margin-left: 5px;
+  position: absolute;
 }
