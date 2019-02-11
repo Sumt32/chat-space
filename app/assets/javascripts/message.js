@@ -41,11 +41,11 @@
       $(function() {
         $(function() {
           if (location.pathname.match(/\/groups\/\d+\/messages/)) {
-            setInterval(autoUpdate, 5000);
+            setInterval(updateNewMessage, 5000);
           }
         });
 
-        function autoUpdate() {
+        function updateNewMessage() {
           if ($('.main-container--wrapper')[0]) {
             var message_id = $('.main-container--wrapper').last().data('id');
           }
@@ -69,3 +69,4 @@
         }
       })
     });
+
