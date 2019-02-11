@@ -41,7 +41,7 @@
       $(function() {
         $(function() {
           if (location.pathname.match(/\/groups\/\d+\/messages/)) {
-            //setInterval(reload, 5000);
+            setInterval(reload, 5000);
           }
         });
 
