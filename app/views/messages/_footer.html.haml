@@ -1,8 +1,10 @@
 .form
   = form_for [@group, @message] do |f|
-    = f.text_field :body, class: 'form__message', placeholder: 'type a message'
-    .form__mask
-      = f.label :image, class: 'form__mask__image' do
-        = fa_icon 'picture-o', class: 'icon'
-        = f.file_field :image, class: 'hidden'
-    = f.submit 'Send', class: 'form__submit'
+    .chat-footer__body
+      = f.text_field :body, class: 'form__message', placeholder: 'type a message'
+      .form__mask
+        = f.label :image do
+          = f.file_field :image, class:'hidden'
+          %i.fa.fa-image
+      = f.submit 'Send', class: 'form__submit'
+
