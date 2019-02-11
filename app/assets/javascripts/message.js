@@ -1,5 +1,5 @@
     $(function() {
-      function messageHTML(message) {
+      function buildSendMessageHTML(message) {
         var addImage = '';
         if (message.image.url) {
           addImage = `<img src="${message.image.url}" class="lower-message__image">`;
@@ -26,7 +26,7 @@
             contentType: false
           })
           .done(function(messageData) {
-            var html = messageHTML(messageData);
+            var html = buildSendMessageHTML(messageData);
             $('.main-container').append(html);
             $('#new_message')[0].reset();
             $('.form__submit').prop('disabled', false);
@@ -41,11 +41,11 @@
       $(function() {
         $(function() {
           if (location.pathname.match(/\/groups\/\d+\/messages/)) {
-            setInterval(reload, 5000);
+            setInterval(autoUpdate, 5000);
           }
         });
 
-        function reload() {
+        function autoUpdate() {
           if ($('.main-container--wrapper')[0]) {
             var message_id = $('.main-container--wrapper').last().data('id');
           }
@@ -55,10 +55,10 @@
               data: { id: message_id },
               dataType: 'json'
             })
-            .done(function(data) {
-              if (data.length) {
-                $.each(data, function(i, data) {
-                  var html = messageHTML(data);
+            .done(function(messageData) {
+              if (messageData.length) {
+                $.each(messageData, function(i, messageData) {
+                  var html = buildSendMessageHTML(messageData);
                   $('.main-container').append(html);
                 });
               }
@@ -69,4 +69,3 @@
         }
       })
     });
-
