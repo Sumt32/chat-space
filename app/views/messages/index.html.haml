@@ -5,6 +5,7 @@
     %p members:
     - @group.users.each do |member|
       %p= member.name
-    %h4 Edit
+    = link_to edit_group_path(@group.id), method: :get do
+      %h4 Edit
   = render partial: 'message', collection: @messages
   = render partial: 'footer'
