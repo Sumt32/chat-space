@@ -69,6 +69,7 @@ gem 'devise'
 gem 'rails-i18n'
 gem 'devise-i18n-views'
 gem 'carrierwave'
+gem 'fog-aws'
 gem 'mini_magick'
 gem 'pry-rails'
 
