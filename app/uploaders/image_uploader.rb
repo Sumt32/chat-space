@@ -3,18 +3,17 @@ class ImageUploader < CarrierWave::Uploader::Base
   # include CarrierWave::RMagick
   # include CarrierWave::MiniMagick
 # リサイズしたり画像形式を変更するのに必要
-  include CarrierWave::RMagick
 
  # 画像の上限を縦横300pxにする
-  process :resize_to_limit => [300, 300]
+  #process :resize_to_limit => [300, 300]
 
   # 保存形式をJPGにする
-  process :convert => 'jpg'
+  #process :convert => 'jpg'
 
   # サムネイルを生成する設定
-  version :thumb do
-    process :resize_to_limit => [300, 300]
-  end
+  # version :thumb do
+  #   process :resize_to_limit => [300, 300]
+  # end
 
   # jpg,jpeg,gif,pngしか受け付けない設定
   def extension_white_list
